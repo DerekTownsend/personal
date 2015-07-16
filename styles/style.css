@@ -1,0 +1,70 @@
+    /* link has to be in this order*/
+      
+       a:link{ 
+           color:blue;
+           font-weight:bold;
+           
+       }
+       
+       a:visted{
+           color:green;
+           
+       }
+
+       a:hover{
+           color:red;
+       }
+       
+       a:active{
+           color:red;
+           
+       }
+       
+       .nav { 
+           list-style-type:none;
+       }
+       
+       .nav li{
+           margin: 5px;
+           display:inline-block;
+           
+       }
+       
+       .nav a {
+           padding: 5px;
+           background-color:lightyellow;
+           border-width:5px;
+           border-style:solid;
+       }
+       .nav a:hover {
+           padding: 5px;
+           background-color:lightyellow;
+           border-width:5px;
+           border-style:dashed;
+       }
+        
+        body {
+            /*background-color: ForestGreen;*/ 
+            color: lightblue;
+            background-image: url(../images/subtle.jpg);
+            background-size: cover;
+            font-family: Cursive;
+            font-size: 50px;
+            text-align:center;
+            -webkit-text-stroke: 2px black;
+        }    
+        h1,h2 { 
+            color: lightblue; 
+            font-style: italic;
+            -webkit-text-stroke: 5px black;
+           text-shadow:
+           4px 4px 0 #000,
+          -1px -1px 0 #000,  
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+           1px 1px 0 #000;
+        }
+        
+        img {
+            height: 250px;
+        }
