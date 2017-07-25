@@ -1,70 +1,167 @@
-    /* link has to be in this order*/
-      
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Sans+Pro');
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
+
+        html{
+            width: 100%;
+            height: 300%;
+        }
+        
+        body{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            /*color: lightblue;*/
+            background-color:white;
+            /*background-size: cover;*/
+            /*font-family: Cursive;*/
+            font-size: 50px;
+            margin: 0;
+            content: "";
+            display: table;
+            clear: both;
+            /*-webkit-text-stroke: 2px black;*/
+        }
+       h1,h2{
+           font-family: 'Open Sans Condensed', sans-serif;
+           margin: 0;
+           text-align: center;
+           color:white;
+           font-size: 1.5em
+       }      
+              
+       nav { 
+           list-style-type:none;
+           width: 100%;
+           /*background-color: white;*/
+           margin: 0;
+           /*padding-top: 20px;*/
+           /*padding-bottom: 20px;*/
+         text-align: center;
+         font-family: 'Source Sans Pro', sans-serif;
+         
+
+       }
+       header{
+           background-color: black;
+       }
+       nav li{
+           margin:0 5px;
+           display:inline-block;
+           
+       }
+       
+       nav a {
+           padding: 0 25px;
+           /*background-color:lightyellow;*/
+           border-width:5px;
+           /*border-style:solid;*/
+           text-decoration: none;
+           color:white;
+          background-color: black;
+
+       }
+       nav a:hover {
+           /*padding: 5px;*/
+           /*background-color:lightyellow;*/
+           /*border-width:5px;*/
+           /*border-style:dashed;*/
+       }
+       footer{
+        display: flex;
+        justify-content:space-around;
+        background-color: black;
+        width: 100%;
+        clear: both;
+        position: absolute;
+        bottom: 0;
+       }
+        main{
+            text-align: center;
+        }
+        
+        img {
+            height: 250px;
+        }
+       
+       ul{
+           display: inline;
+       }
+        
        a:link{ 
-           color:blue;
-           font-weight:bold;
+           color:white;
+           background-color: black;
+           /*font-weight:bold;*/
            
        }
        
        a:visted{
-           color:green;
-           
+           color:white;
+           background-color: black;
        }
 
        a:hover{
-           color:red;
+           color:black;
+           background-color: white;
        }
        
        a:active{
            color:red;
            
        }
+       ul.nav li.icon {
+    display: none;
+}
        
-       .nav { 
-           list-style-type:none;
-       }
-       
-       .nav li{
-           margin: 5px;
-           display:inline-block;
-           
-       }
-       
-       .nav a {
-           padding: 5px;
-           background-color:lightyellow;
-           border-width:5px;
-           border-style:solid;
-       }
-       .nav a:hover {
-           padding: 5px;
-           background-color:lightyellow;
-           border-width:5px;
-           border-style:dashed;
-       }
-        
-        body {
-            /*background-color: ForestGreen;*/ 
-            color: lightblue;
-            background-image: url(../images/subtle.jpg);
-            background-size: cover;
-            font-family: Cursive;
-            font-size: 50px;
-            text-align:center;
-            -webkit-text-stroke: 2px black;
-        }    
-        h1,h2 { 
-            color: lightblue; 
-            font-style: italic;
-            -webkit-text-stroke: 5px black;
-           text-shadow:
-           4px 4px 0 #000,
-          -1px -1px 0 #000,  
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-           1px 1px 0 #000;
-        }
-        
-        img {
-            height: 250px;
-        }
+@media screen and (max-width:1126px) {
+    ul.nav li:not(:first-child) {
+        display: none;
+    }
+    ul.nav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+@media screen and (max-width:1126px) {
+    ul.nav li.icon {
+        float: right;
+      margin-right:20px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width:1126px) {
+    ul.nav.responsive {
+        position: relative;
+    }
+    ul.nav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.nav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.nav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+.stickynav{
+  position:fixed;
+  top:0;
+  left:0;  
+  background-color: black;
+}
+
+.active{
+  color:black;
+  background-color:white;
+}
+
+i{
+    color:white;
+    text-align: center 
+}
