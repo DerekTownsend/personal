@@ -4,23 +4,19 @@
 
         html{
             width: 100%;
-            height: 300%;
+            height: 100%;
         }
         
         body{
             width: 100%;
             height: 100%;
             position: relative;
-            /*color: lightblue;*/
             background-color:white;
-            /*background-size: cover;*/
-            /*font-family: Cursive;*/
             font-size: 50px;
             margin: 0;
             content: "";
             display: table;
             clear: both;
-            /*-webkit-text-stroke: 2px black;*/
         }
        h1,h2{
            font-family: 'Open Sans Condensed', sans-serif;
@@ -39,6 +35,7 @@
            /*padding-bottom: 20px;*/
          text-align: center;
          font-family: 'Source Sans Pro', sans-serif;
+         z-index: 1000;
          
 
        }
@@ -78,6 +75,13 @@
        }
         main{
             text-align: center;
+            position: relative;
+            /*height: 100%;*/
+            margin: 5%;
+            max-height: 100%;
+            padding-bottom: 5em;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
         }
         
         img {
@@ -109,7 +113,7 @@
            color:red;
            
        }
-       ul.nav li.icon {
+       .icon {
     display: none;
 }
        
@@ -117,8 +121,8 @@
     ul.nav li:not(:first-child) {
         display: none;
     }
-    ul.nav li.icon {
-        float: right;
+    .icon {
+        /*float: right;*/
         display: inline-block;
     }
 }
@@ -133,8 +137,8 @@
     ul.nav.responsive {
         position: relative;
     }
-    ul.nav.responsive li.icon {
-        position: absolute;
+    .icon {
+        position: fixed;
         right: 0;
         top: 0;
     }
@@ -164,4 +168,22 @@
 i{
     color:white;
     text-align: center 
+}
+.fa:hover{
+    color: white;
+}
+.footer-icon:hover{
+    background-color: black;
+}
+
+
+.section{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /*margin: 5% auto;*/
+    position: relative;
+    margin-bottom: 70px;
+    padding-top: 4%;
+
 }
